@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: #eee;
+    background: linear-gradient(to right, #eee, #c9d6ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contianer {
+    background-color: transparent;
+    border-radius: 30px;
+    position: relative;
+    text-align: center ;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 90%;
+    max-width: 680px;
+    min-height: 440px;
+}
+
+.contianer h1{
+    margin: 10px;
+    color: #4070f4;
+    text-shadow: #4070f4 1px 0 10px;
+}
+.smollbox{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.student, .member{
+    background-color: aliceblue;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    width: 40%;
+    max-width: 305px;
+    height: 90%;
+}
+
+.student::after, .member::after, .student::before, .member::before{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    content: ' ';
+    bottom: 152px;
+    background-color: #4070f4;
+}
+
+.student::after, .member::after{
+    border-radius: 20px 0 0 0;
+    background-color: aliceblue;
+}
+
+.student .upsection, .member .upsection{
+    width: 100%;
+    height: 60%;
+    background-color: #4070f4;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.imgbx{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    border: 3px solid aliceblue;
+    background-color: #4070f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgbx img{
+    height: 117px;
+    width: 117px;
+    border-radius: 50%;
+}
+
+.student .doensection, .member .doensection{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    gap: 10%;
+
+}
+
+.student .doensection p, .member .doensection p {
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 8px;
+    color: #707070;
+}
+
+.student button, .member button {
+    background-color: #4070f4;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin: -10px 10px 10px;
+    cursor: pointer;
+}
+
+.member button {
+    margin-top: 10px;
+}
+
